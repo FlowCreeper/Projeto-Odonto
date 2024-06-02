@@ -26,5 +26,10 @@ namespace PovaIgor
                 textBox2.Text = "email@mail.com";
             }
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
