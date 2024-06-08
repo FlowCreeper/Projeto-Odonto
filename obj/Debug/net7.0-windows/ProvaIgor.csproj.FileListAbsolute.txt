@@ -31,3 +31,12 @@ C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\refint\ProvaI
 C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ProvaIgor.pdb
 C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ProvaIgor.genruntimeconfig.cache
 C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ref\ProvaIgor.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ProvaIgor.csproj.AssemblyReference.cache
+C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ProvaIgor.sourcelink.json
+C:\Users\Caio\Repositorios\Projeto-Odonto\obj\Debug\net7.0-windows\ProvaIgor.csproj.Up2Date
