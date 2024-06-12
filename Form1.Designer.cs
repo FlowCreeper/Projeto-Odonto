@@ -49,7 +49,6 @@
             label2 = new Label();
             label1 = new Label();
             tabPage1 = new TabPage();
-            btnDelDr = new Button();
             label10 = new Label();
             mtbConsultorio = new MaskedTextBox();
             label8 = new Label();
@@ -63,6 +62,7 @@
             label6 = new Label();
             label5 = new Label();
             tabControl1 = new TabControl();
+            btnDelDr = new Button();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvCliente).BeginInit();
             tabPage1.SuspendLayout();
@@ -170,18 +170,18 @@
             dgvCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCliente.Location = new Point(306, 36);
             dgvCliente.Name = "dgvCliente";
-            dgvCliente.ReadOnly = true;
             dgvCliente.RowHeadersWidth = 51;
             dgvCliente.RowTemplate.Height = 29;
             dgvCliente.Size = new Size(511, 366);
             dgvCliente.TabIndex = 26;
+            dgvCliente.CellEndEdit += dgvCliente_CellEndEdit;
             // 
             // mclCliente
             // 
             mclCliente.Location = new Point(13, 195);
             mclCliente.Name = "mclCliente";
             mclCliente.TabIndex = 20;
-            mclCliente.DateChanged += mclCliente_DateChanged;
+            mclCliente.DateSelected += mclCliente_DateSelected;
             // 
             // mtbTelefone
             // 
@@ -189,7 +189,7 @@
             mtbTelefone.Location = new Point(11, 91);
             mtbTelefone.Mask = "(00) 00000-0000";
             mtbTelefone.Name = "mtbTelefone";
-            mtbTelefone.Size = new Size(94, 27);
+            mtbTelefone.Size = new Size(110, 27);
             mtbTelefone.TabIndex = 15;
             mtbTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
@@ -289,16 +289,6 @@
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnDelDr
-            // 
-            btnDelDr.Location = new Point(504, 398);
-            btnDelDr.Name = "btnDelDr";
-            btnDelDr.Size = new Size(94, 29);
-            btnDelDr.TabIndex = 32;
-            btnDelDr.Text = "Excluir";
-            btnDelDr.UseVisualStyleBackColor = true;
-            btnDelDr.Click += btnDelDr_Click;
-            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -329,7 +319,6 @@
             // 
             cbxHorario1.DropDownStyle = ComboBoxStyle.DropDownList;
             cbxHorario1.FormattingEnabled = true;
-            cbxHorario1.Items.AddRange(new object[] { "08:00:00", "09:00:00", "10:00:00", "11:00:00", "13:00:00", "14:00:00", "15:00:00", "16:00:00" });
             cbxHorario1.Location = new Point(80, 399);
             cbxHorario1.Name = "cbxHorario1";
             cbxHorario1.Size = new Size(175, 28);
@@ -337,6 +326,8 @@
             // 
             // dgvCadastro
             // 
+            dgvCadastro.AllowUserToAddRows = false;
+            dgvCadastro.AllowUserToDeleteRows = false;
             dgvCadastro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCadastro.Location = new Point(328, 35);
             dgvCadastro.Name = "dgvCadastro";
@@ -380,6 +371,7 @@
             mclCadastro.Location = new Point(11, 167);
             mclCadastro.Name = "mclCadastro";
             mclCadastro.TabIndex = 21;
+            mclCadastro.DateSelected += mclCadastro_DateSelected;
             // 
             // tbxNomeDr
             // 
@@ -415,6 +407,16 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(831, 476);
             tabControl1.TabIndex = 12;
+            // 
+            // btnDelDr
+            // 
+            btnDelDr.Location = new Point(504, 398);
+            btnDelDr.Name = "btnDelDr";
+            btnDelDr.Size = new Size(94, 29);
+            btnDelDr.TabIndex = 32;
+            btnDelDr.Text = "Excluir";
+            btnDelDr.UseVisualStyleBackColor = true;
+            btnDelDr.Click += btnDelDr_Click;
             // 
             // Form1
             // 
